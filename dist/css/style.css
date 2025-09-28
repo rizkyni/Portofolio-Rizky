@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar{
+    padding: 30px 0;
+}
+
+.container{
+    width: 80%;
+    /* margin-inline: auto agar menjadi ketengah */
+    margin-inline: auto;
+}
+
+@media(max-width: 992px){
+    .container{
+        width: 90%;
+    }
+}
+
+/* Navbar */
+.navbar-box{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-box .navbar-list{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navbar-box .navbar-list li{
+    list-style-type: none;
+}
+
+.navbar-box .navbar-list li a{
+    text-decoration: none;
+    color: black;
+}
+/* Navbar */
+
+/* Hero */
+.hero{
+    margin-block: 70px;
+}
+
+.hero-box{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero-box img{
+    width: 300px;
+}
+
+.hero-box h1{
+    text-align: center;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 1.3;
+}
+
+.hero-box h1 span{
+    font-weight: bold;
+    color: #00cba9;
+}
+
+@media(max-width: 768px){
+    .hero-box h1{
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 475px){
+    .hero-box h1{
+        font-size: 40px;
+    }
+}
+/* Hero */
+
+header svg{
+    margin-bottom: -10px;
+}
+
+/* Tentang */
+.tentang{
+    background-color: #00cba9;
+    /* padding-block hanya mengatur atas dan bawah padding saja */
+    /* sama seperti padding-top + padding-bottom */
+    padding-block: 50px;
+    /* padding-inline hanya mengatur kanan dan kiri padding saja */
+    /* sama seperti padding-right + padding-left */
+    color: #fff;
+}
+/* Tentang */
