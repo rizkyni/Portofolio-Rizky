@@ -163,6 +163,42 @@ header svg{
     -o-transition: 0.3s;
 }
 
+
+
+.tentang-box .tools .tools-box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.tentang-box .tools .tools-box:hover{
+    background-color: #fff;
+    color: #00cba9;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.tentang-box .tools .tools-box img{
+    background-color: #fff;
+    width: 50px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
 @media(max-width:992px){
     .tentang-box .box:nth-child(1){
         grid-template-columns: 1fr;
