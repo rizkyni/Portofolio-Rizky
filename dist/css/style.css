@@ -99,4 +99,80 @@ header svg{
     /* sama seperti padding-right + padding-left */
     color: #fff;
 }
+
+.tentang .container > h1{
+    /* tanda ">" digunakan agar yang diubah hanya h1 yang ada di container */
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+.tentang-box .box:nth-child(1){
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 150px;
+    align-items: center;
+    gap: 50px;
+}
+
+.tentang-box .box:nth-child(1) img{
+    width: 400px;
+    padding: 10px 10px 0 10px;
+    background-color: #00d6b2;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    /* margin-inline akan aktif jika ada width */
+    margin-inline: auto;
+    justify-self: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.tentang-box .box:nth-child(1) p{
+    line-height: 2;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.tentang-box .box:nth-child(1) p span{
+    font-weight: bold;
+}
+
+.tentang-box .box:nth-child(1) a{
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.tentang-box .box:nth-child(1) a:hover{
+    font-weight: 600;
+    background-color: #fff;
+    color: #00cba9;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+@media(max-width:992px){
+    .tentang-box .box:nth-child(1){
+        grid-template-columns: 1fr;
+    }
+
+    .tentang-box .box:nth-child(1) div{
+        text-align: center;     
+    }
+
+}
+
+
 /* Tentang */
