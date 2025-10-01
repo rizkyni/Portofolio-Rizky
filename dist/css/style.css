@@ -300,5 +300,73 @@ header svg {
     grid-template-columns: 1fr;
   }
 }
-
 /* Proyek */
+
+/* Footer */
+footer{
+  background-color: #00cba9;
+  margin-top: -10px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+footer span{
+  font-weight: bold;
+}
+
+footer .social{
+  display: flex;
+  align-items: center;
+}
+
+footer .social a{
+  color: #fff;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+}
+/* Footer */
+
+/* Scroll to Top */
+.scroll-up{
+  position: fixed;
+  bottom: 50px;
+  right: 40px;
+  background-color: #00cba9;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.scroll-up a{
+  color: #fff;
+}
+
+@media (max-width: 475px) {
+  .scroll-up {
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    bottom: 20px;
+  }
+}
+/* Scroll to Top */
