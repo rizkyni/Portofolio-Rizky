@@ -339,9 +339,9 @@ footer .social a{
 /* Scroll to Top */
 .scroll-up{
   position: fixed;
-  bottom: 50px;
+  bottom: -50px;
   right: 40px;
-  background-color: #00cba9;
+  background-color: #118c73;
   width: 50px;
   height: 50px;
   display: flex;
@@ -354,6 +354,26 @@ footer .social a{
   -o-border-radius: 100%;
   cursor: pointer;
   font-size: 24px;
+  opacity: 0;
+}
+
+.scroll-up.scroll-active{
+  bottom: 40px;
+  opacity: 1;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+.scroll-up:hover{
+  background-color: #066c5b;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
 }
 
 .scroll-up a{
@@ -366,6 +386,10 @@ footer .social a{
     width: 40px;
     height: 40px;
     font-size: 20px;
+    bottom: 20px;
+  }
+
+  .scroll-up.scroll-active {
     bottom: 20px;
   }
 }
